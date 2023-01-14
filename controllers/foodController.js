@@ -89,6 +89,7 @@ exports.findAll = (req, res) => {
 exports.findAllByCategory = (req, res) => {
   
     const category = req.params.category;
+    console.log("req --> " + req.params);
 
     let condition = { 
         category: {

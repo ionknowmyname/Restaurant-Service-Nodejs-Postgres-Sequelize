@@ -18,10 +18,10 @@ app.use(express.urlencoded({ extended: true }));
 
 db.sequelize.sync()
     .then(() => {
-        console.log("Synced db.");
+        console.log("Synced DB.");
     })
     .catch((err) => {
-        console.log("Failed to sync db: " + err.message);
+        console.log("Failed to sync DB: " + err.message);
     });
 
 

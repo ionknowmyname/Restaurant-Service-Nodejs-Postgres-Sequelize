@@ -8,9 +8,9 @@ router.post("/new", foods.create);
 
 router.get("/all", foods.findAll);
 
-router.get("/category/:name", foods.findAllByCategory);
+router.get("/category/:category", foods.findAllByCategory);
 
-router.get("/name/:category", foods.findAllBySimilarName);
+router.get("/name/:name", foods.findAllBySimilarName);
 
 router.get("/id/:id", foods.findOne);
 
