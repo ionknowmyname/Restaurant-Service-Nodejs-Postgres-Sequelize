@@ -6,13 +6,17 @@ const foods = require("../controllers/foodController");
 
 router.post("/new", foods.create);
 
-router.get("/", foods.findAll);
+router.get("/all", foods.findAll);
 
-router.get("/:id", foods.findOne);
+router.get("/category/:name", foods.findAllByCategory);
 
-router.put("/:id", foods.update);
+router.get("/name/:category", foods.findAllBySimilarName);
 
-router.delete("/:id", foods.delete);
+router.get("/id/:id", foods.findOne);
+
+router.put("/update/:id", foods.update);
+
+router.delete("/delete/:id", foods.delete);
 
 
 
