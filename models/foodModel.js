@@ -4,7 +4,7 @@ module.exports = (sequelize, Sequelize) => {
             type: Sequelize.STRING
         },
         category: {
-            type: Sequelize.STRING
+            type: Sequelize.ENUM('Entree', 'Dessert', 'Appetizer')
         },
         price: {
             type: Sequelize.FLOAT

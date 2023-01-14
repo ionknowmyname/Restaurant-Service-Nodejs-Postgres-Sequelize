@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const db = require("./models");
 const food = require("./routes/foodRoute");
+const order = require("./routes/orderRoute");
 
 const app = express();
 
@@ -26,6 +27,7 @@ db.sequelize.sync()
 
 
 app.use("/api/v1/food", food);
+app.use("/api/v1/order", order);
 
 
 
