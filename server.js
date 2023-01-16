@@ -26,6 +26,17 @@ db.sequelize.sync()
     });
 
 
+// To drop tables and resync DB on each npm run start, use below instead
+
+/* 
+
+    db.sequelize.sync({ force: true }).then(() => {
+        console.log("Drop and re-sync db.");
+    }); 
+
+*/
+
+
 app.use("/api/v1/food", food);
 app.use("/api/v1/order", order);
 

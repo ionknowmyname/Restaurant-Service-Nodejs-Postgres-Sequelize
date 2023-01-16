@@ -4,7 +4,7 @@ module.exports = (sequelize, Sequelize) => {
             type: Sequelize.STRING
         },
         foodList: {
-            type: Sequelize.ARRAY(Sequelize.STRING)  // ir try JSONB to store the whole food model
+            type: Sequelize.ARRAY(Sequelize.STRING)  // or try JSONB to store the whole food model
         },
         totalPrice: {
             type: Sequelize.FLOAT
