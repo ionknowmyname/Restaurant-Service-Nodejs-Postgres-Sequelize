@@ -1,4 +1,4 @@
-const db = require("../models");
+const db = require("../models2");
 const Food = db.food;
 const Op = db.Sequelize.Op;
 
