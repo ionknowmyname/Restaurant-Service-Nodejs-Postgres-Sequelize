@@ -4,6 +4,13 @@
   "description": "Restaurant Service using Nodejs & Postgres",
   "main": "server.js",
   "scripts": {
+    "make-model": "npx sequelize-cli model:generate --name Food --attributes name:string,category_id:integer,price:float",
+    "migrate": "npx sequelize-cli db:migrate",
+    "unmigrate": "npx sequelize-cli db:migrate:undo",
+    "make-seed": "npx sequelize-cli seed:generate --name demo-category",
+    "run-seed": "npx sequelize-cli db:seed:all",
+    "unrun-seed-prev": "npx sequelize-cli db:seed:undo",
+    "unrun-seed-all": "npx sequelize-cli db:seed:undo:all",
     "start": "nodemon server.js"
   },
   "author": "",
